@@ -29,6 +29,14 @@ html, body {
 }
 
 a:-webkit-any-link {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  color: #6bdbc3;
+  display: inline-block
+}
+
+.bottom a:-webkit-any-link {
   color: white;
   text-decoration: none;
   text-shadow:
@@ -43,17 +51,32 @@ h1 {
 }
 
 p {
+  margin-top: 0px;
   border-radius: 10%;
   border: 3px solid #C7C6C1;
   padding: 20px;
   background: white;
 }
 
+h2 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 200%;
+  color: #6bdbc3;
+  display: inline-block
+}
+
+h3 {
+  margin: 5px;
+  display: inline-block
+}
+
 img {
   display: block;
+  margin-bottom: 40px;
   padding-right: 50px;
   padding-left: 40px;
   margin-right: auto;
   margin-left: auto;
-  width: 15%;
+  width: 25%;
 }
