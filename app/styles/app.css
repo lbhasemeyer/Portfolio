@@ -1,3 +1,59 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 html, body {
   margin: 20px;
+  margin-top: 10px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.bottom {
+  background: #93FAE4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-link {
+  display: inline;
+  padding-right: 500px;
+  padding-left: 40px;
+  font-size: 20px;
+}
+
+.top {
+  background: #8C8B88;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+a:-webkit-any-link {
+  color: white;
+  text-decoration: none;
+  text-shadow:
+  -1px -1px 0 #C7C6C1,
+  1px -1px 0 #C7C6C1,
+  -1px 1px 0 #C7C6C1,
+  1px 1px 0 #C7C6C1;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  border-radius: 10%;
+  border: 3px solid #C7C6C1;
+  padding: 20px;
+  background: white;
+}
+
+img {
+  display: block;
+  padding-right: 50px;
+  padding-left: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 15%;
 }

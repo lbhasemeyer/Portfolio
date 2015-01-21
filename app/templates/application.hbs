@@ -1,19 +1,27 @@
-<link rel="stylesheet" href="css/master.css" type="text/css" charset="utf-8">
+<header class="top">
+  <div class="header-text">
+    <h1>You Should Hire Laura</h1>
+  </div>
+</header>
+
+<header class="bottom">
+  <div class="header-link">
+    {{#link-to 'index'}}
+    Index
+    {{/link-to}}
+  </div>
+  <div class="header-link">
+    {{#link-to 'resume'}}
+    Resume
+    {{/link-to}}
+  </div>
+  <div class="header-link">
+    {{#link-to 'projects'}}
+    Projects
+    {{/link-to}}
+  </div>
+</header>
 
 
-
-{{#link-to 'index'}}
-Index
-{{/link-to}}
-
-{{#link-to 'resume'}}
-Resume
-{{/link-to}}
-
-{{#link-to 'projects'}}
-Projects
-{{/link-to}}
-
-<h1 id="title">Laura's Portfolio</h1>
 
 {{outlet}}
