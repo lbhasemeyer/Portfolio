@@ -2,10 +2,55 @@
 
 <h1>Laura's Resume</h1>
 
-{{#each thing in model}}
-  <h2>{{thing.title}}</h2>
-  <h3>{{thing.at}}</h3>
-  <p>{{thing.body}} <br>
-     {{thing.body2}} <br>
-     {{thing.body3}}</p>
-{{/each}}
+<div class="resume">
+
+  <div class="left column">
+    <h3>Goals</h3>
+      <p>I love the rush of solving a problem, of making a page look the way I had envisioned.  I am eager to develop my skills, to learn about more areas and languages, and to contribute to the success of a company.</p>
+    <h3>Contact</h3>
+      <p class="bold">Phone</p><p>303-868-3345</p>
+      <p class="bold">Twitter</p><p>@lkbhas</p>
+      <p class="bold">GitHub</p><p>lbhasemeyer</p>
+      <p class="bold">Email</p><p>lbhasemeyer@gmail.com</p>
+  </div>
+
+  <div class="right column">
+    <h3>Projects</h3>
+      {{#link-to 'projects'}}
+        <p class="bold">Mucklucks</p>
+      {{/link-to}}
+      <p>is a haven for travelers and wanderlusters. It makes travel research easy, visual, collaborative, and fun. It is also a place to gather personal travel memories.</p>
+      {{#link-to 'projects'}}
+      <p class="bold">gSchool</p>
+      {{/link-to}}
+      <p>is a Rails app that has some of the same functionality as Basecamp. Users can create projects, tasks, comments, memberships, and also link their Pivotal Tracker projects.</p>
+    <h3>Skills</h3>
+      <p>Ruby,
+        Rails,
+        Javascript,
+        Ember,
+        HTML,
+        CSS,
+        Capybara,
+        jQuery</p>
+    <h3>Experience</h3>
+      {{#each thing in model}}
+        <p class="bold">{{thing.title}}</p>
+        <p class="bold">{{thing.employer}}</p>
+        <ul>
+            {{#each thing.body}}
+            <li>{{.}}</li>
+            {{/each}}
+        </ul>
+      {{/each}}
+    <h3>Education</h3>
+      <p class="bold">gSchool, Boulder, CO, 2015</p>
+      <p>Full-Stack Web Development</p>
+      <p class="bold">Westmont College, Santa Barbara, CA, 2010</p>
+      <p>Bachelor of Arts in Spanish-Language and Literature</p>
+      <p class="italic">Additional Coursework:
+        <br>Trinity College, Seville, Spain, 2009
+        <br>University of Colorado, Boulder, CO, 2010</p>
+  </div>
+
+</div>

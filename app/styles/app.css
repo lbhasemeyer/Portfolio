@@ -50,7 +50,7 @@ h1 {
   text-align: center;
 }
 
-p {
+.about p, .projects p {
   margin-top: 0px;
   border-radius: 10%;
   border: 3px solid #C7C6C1;
@@ -67,8 +67,25 @@ h2 {
 }
 
 h3 {
-  margin: 5px;
-  display: inline-block
+  margin: 0px;
+}
+
+.right.column h3, .left.column h3 {
+  color: #6bdbc3;
+}
+
+.bold {
+  font-weight: bold;
+  margin: 0px;
+  color: black;
+}
+
+.italic {
+  font-style: italic;
+}
+
+p {
+  margin-top: 0px;
 }
 
 img {
@@ -79,4 +96,17 @@ img {
   margin-right: auto;
   margin-left: auto;
   width: 25%;
+}
+
+.right.column {
+  width: 70%;
+  float: right;
+  border-left: 2px solid #C7C6C1;
+  padding-left: 20px;
+}
+
+.left.column {
+  width: 30%;
+  float: left;
+  padding-right: 20px;
 }

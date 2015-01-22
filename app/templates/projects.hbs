@@ -2,7 +2,9 @@
 
 <h1>Laura's Projects</h1>
 
-{{#each thing in model}}
+<div class="projects">
+  {{#each thing in model}}
   <h2><a {{bind-attr href=thing.url}}>{{thing.title}}</a></h2>
   <p>{{thing.body}}</p>
-{{/each}}
+  {{/each}}
+</div>
